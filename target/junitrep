@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="100.897117">
+<testcase classname="Search for Vehicle on dvla website" name="Check that correct vehicle details are returned from dvla website" time="27.346405">
+<system-out><![CDATA[Given User is on the dvla site..............................................passed
+When User enters "LM07KJV"..................................................passed
+Then The make and model matches "FORD" and "GREY"...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search for Vehicle on dvla website" name="Check that correct vehicle details are returned from dvla website 2" time="16.784477">
+<system-out><![CDATA[Given User is on the dvla site..............................................passed
+When User enters "LM08KJV"..................................................passed
+Then The make and model matches "TOYOTA" and "GREY".........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search for Vehicle on dvla website" name="Check that correct vehicle details are returned from dvla website 3" time="16.335104">
+<system-out><![CDATA[Given User is on the dvla site..............................................passed
+When User enters "LM57KJV"..................................................passed
+Then The make and model matches "VOLKSWAGEN" and "BLUE".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search for Vehicle on dvla website" name="Check that correct vehicle details are returned from dvla website 4" time="23.650555">
+<failure message="java.lang.AssertionError: Failed, Color of Car is BLACK instead of WHITE&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at indentitye2e.partB.FindVehicl_Stepdef.the_make_and_model_matches_and(FindVehicl_Stepdef.java:71)&#13;&#10;&#9;at ✽.Then The make and model matches &quot;MERCEDES-BENZ&quot; and &quot;WHITE&quot;(indentitye2e/partB/findvehicle.feature:9)&#13;&#10;"><![CDATA[Given User is on the dvla site..............................................passed
+When User enters "LM09KJV"..................................................passed
+Then The make and model matches "MERCEDES-BENZ" and "WHITE".................failed
+
+StackTrace:
+java.lang.AssertionError: Failed, Color of Car is BLACK instead of WHITE
+	at org.junit.Assert.fail(Assert.java:88)
+	at indentitye2e.partB.FindVehicl_Stepdef.the_make_and_model_matches_and(FindVehicl_Stepdef.java:71)
+	at ✽.Then The make and model matches "MERCEDES-BENZ" and "WHITE"(indentitye2e/partB/findvehicle.feature:9)
+]]></failure>
+</testcase>
+<testcase classname="Search for Vehicle on dvla website" name="Check that correct vehicle details are returned from dvla website 5" time="16.780576">
+<system-out><![CDATA[Given User is on the dvla site..............................................passed
+When User enters "LM59KJV"..................................................passed
+Then The make and model matches "MINI" and "WHITE"..........................passed
+]]></system-out>
+</testcase>
+</testsuite>
